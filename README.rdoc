@@ -1,28 +1,11 @@
-== README
+Реализовать автомат для размена денег.
+1) При инициализации он должен принимать количество монет каждого номинала в наличии (например, 10 монет по "50", 8 монет по "25" и т.д.)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2) Реализовать метод exchange который принимает сумму для размена и возвращает определённое количество монет нужного номинала. Если в наличии нет подходящего количества нужных монет - метод должен вызвать исключение.
 
-Things you may want to cover:
+Например, если я прошу разменять 2 грн, а в наличии есть 3 монеты по "50" и 4 монеты по "25"
+Результат может быть таким: {50 => 3, 25 => 2} или {50 => 2, 25 => 4}.
 
-* Ruby version
+Количество монет в наличии должно уменьшаться после каждого размена.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+3) Задачу оформить в виде json API
